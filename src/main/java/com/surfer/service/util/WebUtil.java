@@ -53,6 +53,7 @@ public class WebUtil {
     public static void writeJSON(HttpServletResponse response, Result<?> result) {
         log.info("响应对象：{}", result);
         if (result == null) return;
+        response.setContentType("application/json;charset=UTF-8");
         try {
             log.info("响应，开始转换");
             String resultJson = objectMapper.writeValueAsString(result);
