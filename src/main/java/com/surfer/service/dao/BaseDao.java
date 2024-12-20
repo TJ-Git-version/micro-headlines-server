@@ -1,4 +1,4 @@
-package com.surfer.service.service;
+package com.surfer.service.dao;
 
 import com.surfer.service.util.JDBCUtil;
 import org.slf4j.Logger;
@@ -46,7 +46,7 @@ public class BaseDao {
             log.info("----param: {}", Arrays.toString(args));
             resultSet = prepareStatement.executeQuery();
             obj = resultSet.getObject(1, clazz);
-            log.info("result object: {}", t);
+            log.info("result object: {}", obj);
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException("查询单个对象异常");
