@@ -34,19 +34,6 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.14.2</version>
         </dependency>
-        <!--只需要导入jackson-databind即可，maven会拉取需要的子依赖-->
-<!--        <dependency>-->
-<!--            <groupId>com.fasterxml.jackson.core</groupId>-->
-<!--            <artifactId>jackson-annotations</artifactId>-->
-<!--            <version>2.14.2</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.fasterxml.jackson.core</groupId>-->
-<!--            <artifactId>jackson-core</artifactId>-->
-<!--            <version>2.14.2</version>-->
-<!--        </dependency>-->
-
-        <!---->
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
@@ -65,47 +52,6 @@
             <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
-        <!--导入junit-jupiter即可，maven会下载需要的子依赖-->
-<!--        <dependency>-->
-<!--            <groupId>org.junit.jupiter</groupId>-->
-<!--            <artifactId>junit-jupiter-api</artifactId>-->
-<!--            <version>5.10.2</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.junit.jupiter</groupId>-->
-<!--            <artifactId>junit-jupiter-engine</artifactId>-->
-<!--            <version>5.10.2</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.junit.jupiter</groupId>-->
-<!--            <artifactId>junit-jupiter-params</artifactId>-->
-<!--            <version>5.10.2</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-commons</artifactId>
-            <version>1.9.2</version>
-        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.junit.platform</groupId>-->
-<!--            <artifactId>junit-platform-engine</artifactId>-->
-<!--            <version>1.9.2</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-        <!--导入junit-platform-enginer即可，maven会下载需要的子依赖-->
-<!--        <dependency>-->
-<!--            <groupId>org.apiguardian</groupId>-->
-<!--            <artifactId>apiguardian-api</artifactId>-->
-<!--            <version>1.1.2</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.opentest4j</groupId>-->
-<!--            <artifactId>opentest4j</artifactId>-->
-<!--            <version>1.2.0</version>-->
-<!--        </dependency>-->
         <!--lombok：使用注解简化get set 等方法-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -113,7 +59,19 @@
             <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
+        <!-- SLF4J API -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.36</version>
+        </dependency>
 
+        <!-- Logback 实现 -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.6</version>
+        </dependency>
     </dependencies>
 
 
