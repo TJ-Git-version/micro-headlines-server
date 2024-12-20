@@ -42,9 +42,9 @@ create table `news`
 
 create table `news_classify_relation`
 (
-    `news_id`     int not null comment '新闻id',
-    `classify_id` int not null comment '分类id',
-    primary key (`news_id`, `classify_id`)
+    `newsId`     int not null comment '新闻id',
+    `classifyId` int not null comment '分类id',
+    primary key (`newsId`, `classifyId`)
 ) comment '新闻-分类-关联';
 
 create table `news_classify`
