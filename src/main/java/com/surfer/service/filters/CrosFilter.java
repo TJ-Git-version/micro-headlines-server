@@ -1,6 +1,7 @@
 package com.surfer.service.filters;
 
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
@@ -11,6 +12,7 @@ import java.io.IOException;
  * date 2024/12/21 13:37
  * description 服务端解决跨域请求,实现filter
  */
+@WebFilter("/*")
 public class CrosFilter implements Filter {
 
     @Override
